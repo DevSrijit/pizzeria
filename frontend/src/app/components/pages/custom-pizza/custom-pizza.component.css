@@ -1,0 +1,50 @@
+.custom-pizza-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.ingredients-list,
+.selected-ingredients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ingredient input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.ingredient label {
+  margin-bottom: 0;
+}
+
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.selected-ingredients-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-ingredients-list li {
+  margin-bottom: 10px;
+}

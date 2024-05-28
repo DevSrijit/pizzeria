@@ -1,0 +1,19 @@
+<div class="custom-pizza-container">
+  <h2>Create Your Custom Pizza</h2>
+  <div class="ingredients-list">
+    <div *ngFor="let ingredient of ingredients" class="ingredient">
+      <input type="checkbox" id="{{ingredient.name}}" (change)="onIngredientToggle(ingredient)">
+      <label for="{{ingredient.name}}">{{ingredient.name}} (+{{ingredient.price | currency:'INR'}})</label>
+    </div>
+  </div>
+  <button class="add-to-cart-button" (click)="addToCart()">Add To Cart</button>
+
+  <div class="selected-ingredients-container">
+    <h3>Selected Ingredients:</h3>
+    <ul class="selected-ingredients-list">
+      <li *ngFor="let selectedIngredient of selectedIngredients">
+        {{selectedIngredient.name}} (+{{selectedIngredient.price | currency:'INR'}})
+      </li>
+    </ul>
+  </div>
+</div>
